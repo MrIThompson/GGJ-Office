@@ -5436,7 +5436,7 @@ PrefabInstance:
     - target: {fileID: 8048391391436197101, guid: fdf7c5819a5ae8c4ba1ef456d1ecd997,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.0000359788
+      value: -0.000040160758
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6518,6 +6518,117 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 490464807}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1879987353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1879987357}
+  - component: {fileID: 1879987356}
+  - component: {fileID: 1879987355}
+  - component: {fileID: 1879987354}
+  m_Layer: 0
+  m_Name: Parser
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1879987354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879987353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d474220b59aacbf4cb124a905713bd31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  affectors:
+  - type: eject
+    currentValue: 0
+    targetValue: 0
+  - type: wheels
+    currentValue: 0
+    targetValue: 0
+  - type: brake
+    currentValue: 0
+    targetValue: 0
+  - type: battery
+    currentValue: 0
+    targetValue: 0
+  - type: joysticks
+    currentValue: 0
+    targetValue: 0
+  - type: seatWarm
+    currentValue: 0
+    targetValue: 0
+  - type: straw
+    currentValue: 0
+    targetValue: 0
+  - type: seat
+    currentValue: 0
+    targetValue: 0
+  - type: back
+    currentValue: 0
+    targetValue: 0
+--- !u!114 &1879987355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879987353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49bd2a58106519147bf31ef0d41b871a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentTicket:
+    id: 
+    characterName: 
+    problem: []
+    cannedResponses: []
+    successText: []
+    failureText: []
+    problemArea: 
+    successValue: 0
+  scooter: {fileID: 0}
+--- !u!114 &1879987356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879987353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4b8505ad104aa14c8976fdb7c408c16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ticketJson: {fileID: 4900000, guid: 7c6985d98a0cf084d988696c48080f4d, type: 3}
+  parsedTickets:
+    tickets: []
+--- !u!4 &1879987357
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879987353}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1880073605
 GameObject:
   m_ObjectHideFlags: 0
@@ -7854,3 +7965,4 @@ SceneRoots:
   - {fileID: 651956106}
   - {fileID: 1458909904}
   - {fileID: 1673269691}
+  - {fileID: 1879987357}
