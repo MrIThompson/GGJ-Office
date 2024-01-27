@@ -1,23 +1,24 @@
 {
     "tickets":[
-        {
-            "id": "#1",
-            "characterName": "Bob Rocket",
-            "problem": ["Help, my foot is on fire!", "It really hurts!"],
-            "cannedResponses": ["It's still on fire!", "Burning alive here!"],
-            "successText": ["Phew!", "Thanks mom! I mean uh, bye!"], 
-            "failureText": ["HELP! HELP! HELP! HELP! HE-", "brrrrrrrrrrrrrrrr"],
-            "problemArea": "brake", 
-            "successValue": 0.1
-        },
+      {
+          //Edith, Arthur, Alexander, Alice, Chester, Alfred, Archie, Eileen, Aurelius, Agnes, Beatrix, Benidict, Bennett, Clifford, Cornelia, Cyril, Daisy, Darcy, Dennis, Donald, Edgar, Edward, Edna, Gerald
+        "id": "#1",
+        "characterName": "Edith",
+        "problem": [ "Hey there! I've got a little hiccup with my motorized wheelchair, can you help me out?", "So, my wheelchair has been making this weird noise whenever I move forward. It's like a mix between a dying cat and a squeaky door. Any ideas on how to fix that?", "Seriously? It can't be that hard to get a proper response. What's causing this weird noise, and how do I fix it?", "Are you even listening to me? This is the worst customer service experience ever! Give me something more than a ‘yes.’", "Unbelievable! Okay, last try. My wheelchair sounds like a dying cat. Any suggestions on what might be causing this?" ],
+        "cannedResponses": [ "Are you still there?", "Hello? Hello? This is ridiculous." ],
+        "successText": [ "Phew!", "Thank you so much, i'll make sure to give you 5 stars!'" ],
+        "failureText": [ "HELP! HELP! HELP! HELP! HE-", "I'm done here, I dont need forward momentum anyway!'" ],
+        "problemArea": "wheels",
+        "successValue": 0.1
+      },
         {
             "id": "#2",
-            "characterName": "Rob Bocket",
-            "problem": ["Help, my face is on fire!", "My face!"],
-            "cannedResponses": ["God my face!", "It burns!"],
+            "characterName": "Dennis",
+            "problem": ["Help, my face is on fire!", ],
+            "cannedResponses": ["God my face!", ],
             "successText": ["Oh thank you!", "Thank you so much!"], 
             "failureText": ["OUCH!"],
-            "problemArea": "wheels", 
+            "problemArea": "eject", 
             "successValue": 0.7
         }
     ]
