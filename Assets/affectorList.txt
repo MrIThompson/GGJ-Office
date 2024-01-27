@@ -5,6 +5,7 @@
 "joystick"
 "seatWarm"
 "straw"
-"cusion"
+"cushion"
 "seat"
 "back"
+"tiller"

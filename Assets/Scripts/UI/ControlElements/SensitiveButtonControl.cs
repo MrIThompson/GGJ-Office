@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -23,7 +24,7 @@ public class SensitiveButtonControl : ControlElement
     public void LetGoButton()
     {
         SubmitFloat(CurrentAmount);
-        CurrentAmount = 0;
+        if(Math.Abs(CurrentAmount - Target) > 0.01f) CurrentAmount = 0;
         _amount.SetText(CurrentAmount.ToString());
     }
 }

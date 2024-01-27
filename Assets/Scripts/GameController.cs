@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 /* 
@@ -9,6 +10,9 @@ public class GameController : MonoBehaviour
     public Scooter scooter;
     private TicketParser ticketParser;
 
+    public PhoneController PhoneController;
+    public ComputerUiController ComputerController;
+    
     /*
      * Why am I documenting this?
      */
@@ -29,9 +33,9 @@ public class GameController : MonoBehaviour
     void updateTicket()
     {
         currentTicket = ticketParser.getTicket();
+        PhoneController.StartPhoneCall();
 
 
-        beginCall();
     }
 
     public Ticket GetTicket()
@@ -39,7 +43,7 @@ public class GameController : MonoBehaviour
         return currentTicket;
     }
 
-    public void beginCall()
+    public void BeginCall()
     {
         scooter = GetComponent<Scooter>();
         scooter.Begin();
