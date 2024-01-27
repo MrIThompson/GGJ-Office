@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 /* 
@@ -12,7 +11,7 @@ public class GameController : MonoBehaviour
 
     public PhoneController PhoneController;
     public ComputerUiController ComputerController;
-    
+
     /*
      * Why am I documenting this?
      */
@@ -23,8 +22,6 @@ public class GameController : MonoBehaviour
         ticketParser.parseTickets();
 
         updateTicket();
-
-
     }
 
     /*
@@ -34,8 +31,6 @@ public class GameController : MonoBehaviour
     {
         currentTicket = ticketParser.getTicket();
         PhoneController.StartPhoneCall();
-
-
     }
 
     public Ticket GetTicket()

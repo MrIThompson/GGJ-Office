@@ -13,16 +13,17 @@ public class Ticket
     public string[] failureText;
 
     /* Problem areas area as follows:
-     * Emergency Eject
-     * Wheels
-     * Lock
-     * Battery
-     * Joystick
-     * Seat Warmer
-     * Broken Straw
-     * Flat Cushion
-     * Seat Pos
-     * Back Pos
+     * "eject"
+     * "wheels"
+     * "brake"
+     * "battery"
+     * "joystick"
+     * "seatWarm"
+     * "straw"
+     * "cushion"
+     * "seat"
+     * "back"
+     * "tiller"
      */
     public string problemArea;
     // 0 to 1

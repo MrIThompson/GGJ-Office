@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -8,31 +7,34 @@ public class ComputerUiController : MonoBehaviour
 {
     [SerializeField] private Canvas _parentCanvas;
     [SerializeField] private RectTransform _cursorRect;
-    
-    [Header("Toolbar")] 
+
+    [Header("Toolbar")]
     [SerializeField] private TMP_Text _timeText;
 
-    [Header("Manual")] 
+    [Header("Manual")]
     [SerializeField] private GameObject _manualParent;
     [SerializeField] private ManualElement _manualElement;
     [SerializeField] private ManualElement _manualWarningElement;
-    
+
     [Header("Remote")]
     [SerializeField] private GameObject _remoteParent;
     [SerializeField] private TMP_Text _customerNameText;
-    [SerializeField] private ControlGroupController[] _controllers; 
+    [SerializeField] private ControlGroupController[] _controllers;
 
-    [Header("Notifications")] 
+    [Header("Notifications")]
     [SerializeField] private RectTransform _notifParent;
     [SerializeField] private NotifElement _notifPrefab;
     [SerializeField] private float _notifExpireTime;
     [SerializeField] private float _notifSpawnTime;
 
     int UILayer;
-    
+
+    EmailParser emailParser;
+
     private void Start()
     {
         UILayer = LayerMask.NameToLayer("UI");
+        emailParser = GetComponent<EmailParser>();
         UpdateTimer();
         _manualParent.SetActive(false);
         _remoteParent.SetActive(false);
@@ -47,11 +49,12 @@ public class ComputerUiController : MonoBehaviour
 
     private void CheckNotif()
     {
+        string notifText = emailParser.getEmail();
         var obj = Instantiate(_notifPrefab, _notifParent);
-        obj.Init("", _notifExpireTime);
+        obj.Init(notifText, _notifExpireTime);
         Invoke(nameof(CheckNotif), _notifSpawnTime);
     }
-    
+
     public void OpenManual()
     {
         _manualParent.SetActive(true);
@@ -83,8 +86,8 @@ public class ComputerUiController : MonoBehaviour
     {
         return IsPointerOverUIElement(GetEventSystemRaycastResults());
     }
- 
- 
+
+
     //Returns 'true' if we touched or hovering on Unity UI element.
     private bool IsPointerOverUIElement(List<RaycastResult> eventSystemRaysastResults)
     {
@@ -96,8 +99,8 @@ public class ComputerUiController : MonoBehaviour
         }
         return false;
     }
- 
- 
+
+
     //Gets all event system raycast results of current mouse or touch position.
     static List<RaycastResult> GetEventSystemRaycastResults()
     {
