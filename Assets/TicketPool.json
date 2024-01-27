@@ -1,0 +1,25 @@
+{
+    "tickets":[
+        {
+            "id": "#1",
+            "characterName": "Bob Rocket",
+            "problem": ["Help, my foot is on fire!", "It really hurts!"],
+            "cannedResponses": ["It's still on fire!", "Burning alive here!"],
+            "successText": ["Phew!", "Thanks mom! I mean uh, bye!"], 
+            "failureText": ["HELP! HELP! HELP! HELP! HE-", "brrrrrrrrrrrrrrrr"],
+            "problemArea": "brake", 
+            "successValue": 0.1
+        },
+        {
+            "id": "#2",
+            "characterName": "Rob Bocket",
+            "problem": ["Help, my face is on fire!", "My face!"],
+            "cannedResponses": ["God my face!", "It burns!"],
+            "successText": ["Oh thank you!", "Thank you so much!"], 
+            "failureText": ["OUCH!"],
+            "problemArea": "wheels", 
+            "successValue": 0.7
+        }
+    ]
+}
+
