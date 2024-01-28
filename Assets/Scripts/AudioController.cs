@@ -14,7 +14,16 @@ public class AudioController : MonoBehaviour
     {
         foreach (var source in _sfxSources)
         {
-            if (source.Effect == sfx) source.Source.Play();
+
+            if (source.Effect == sfx)
+            {
+                if (sfx == Sfx.voice1 || sfx == Sfx.voice2 || sfx == Sfx.angvoice)
+                {
+                    source.Source.pitch = Random.Range(1.2f, 1.5f);
+                }
+
+                source.Source.Play();
+            }
         }
     }
 
@@ -36,5 +45,5 @@ public class SfxSource
 
 public enum Sfx
 {
-    ring, message, click
+    ring, message, click, voice1, voice2, angvoice, hangup
 }

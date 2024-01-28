@@ -19,7 +19,7 @@ public class PhoneController : MonoBehaviour
     private int _problemIndex;
     private int _timeOutCounter;
     public int TimeOut;
-    
+
     [SerializeField] private string[] _playerResponses;
 
     public void AnswerPhone()
@@ -56,6 +56,10 @@ public class PhoneController : MonoBehaviour
         {
             Invoke(nameof(StartIrritationCountdown), r + 3f);
         }
+
+        audioController.PlayAudio(Random.value < 0.5f ? Sfx.voice1 : Sfx.voice2);
+
+
     }
 
     private void StartIrritationCountdown()
@@ -74,12 +78,13 @@ public class PhoneController : MonoBehaviour
 
     public void SuccessText()
     {
-        DisplayMsg(_currentTicket.successText[Random.Range(0,_currentTicket.successText.Length)], false, MsgElement.colour.good);
+        DisplayMsg(_currentTicket.successText[Random.Range(0, _currentTicket.successText.Length)], false, MsgElement.colour.good);
     }
 
     public void FailText()
     {
-        DisplayMsg(_currentTicket.failureText[Random.Range(0,_currentTicket.failureText.Length)], false, MsgElement.colour.bad);
+        audioController.PlayAudio(Sfx.angvoice);
+        DisplayMsg(_currentTicket.failureText[Random.Range(0, _currentTicket.failureText.Length)], false, MsgElement.colour.bad);
     }
 
     private void DisplayMsg(string msg, bool player, MsgElement.colour colour)
@@ -92,13 +97,17 @@ public class PhoneController : MonoBehaviour
     public void CompleteCall(bool win)
     {
         CancelInvoke();
-        if(win) SuccessText();
+        if (win) SuccessText();
         else FailText();
         Invoke(nameof(EndCall), 3);
     }
 
     public void EndCall()
     {
+        audioController.StopAudio(Sfx.voice1);
+        audioController.StopAudio(Sfx.voice2);
+        audioController.StopAudio(Sfx.angvoice);
+        audioController.PlayAudio(Sfx.hangup);
         _onPhone = false;
         _phoneRingObj.SetActive(false);
         _problemIndex = 0;
@@ -113,6 +122,7 @@ public class PhoneController : MonoBehaviour
 
     public void StartPhoneCall()
     {
+        audioController.StopAudio(Sfx.hangup);
         audioController.PlayAudio(Sfx.ring);
         _animationSeq = DOTween.Sequence();
         _animationSeq.Append(_phoneTransform.DOPunchRotation(Vector3.one, 2, 8));
