@@ -28,7 +28,7 @@
             "successText": ["Oh thank you!", "Thank you so much!"], 
             "failureText": ["Not the ceiling, please no!"],
             "problemArea": "eject", 
-            "successValue": 0.7
+            "successValue": 0.2
         },
         {
           "id": "#3",
@@ -93,7 +93,7 @@
 {
   "id": "#9",
   "characterName": "Regina",
-  "problem": ["I've recently joined a scooter gang, and we like to freewhell down hills. My freewheel lever is stuck in the 'off' position. How do i fix that please?"],
+  "problem": ["I've recently joined a scooter gang, and we like to freewhell down hills.","My brakes are stuck in the 'off' position. How do i fix that please?"],
   "cannedResponses": ["Please help, my friends are all rolling downhill without me."],
   "successText": ["Cheers, thanks!"], 
   "failureText": ["My friends have left me. Well, back to crushing lonliness i guess. Thanks for nothing."],
