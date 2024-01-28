@@ -12,7 +12,7 @@ public class SliderControl : ControlElement
    public override void InitChild()
    {
       CurrentAmount = Random.value;
-      _amountText.SetText(CurrentAmount.ToString());
+      _amountText.SetText(CurrentAmount.ToString("0.00"));
       _slider.value = CurrentAmount;
       _slider.maxValue = 1;
       base.InitChild();
@@ -21,6 +21,6 @@ public class SliderControl : ControlElement
    public override void SubmitFloat(float i)
    {
       base.SubmitFloat(i);
-      _amountText.SetText(CurrentAmount.ToString());
+      _amountText.SetText(CurrentAmount.ToString("0.00"));
    }
 }

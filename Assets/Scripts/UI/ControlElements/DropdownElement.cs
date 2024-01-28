@@ -16,7 +16,7 @@ public class DropdownElement : ControlElement
         _dropdown.options.Add(new TMP_Dropdown.OptionData("0.75"));
         _dropdown.options.Add(new TMP_Dropdown.OptionData("1"));
         int r = Random.Range(0, 5);
-        _dropdown.options[r].text = Target.ToString();
+        _dropdown.options[r].text = Target.ToString("0.00");
         base.InitChild();
     }
 
