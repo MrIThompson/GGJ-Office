@@ -1966,13 +1966,10 @@ PrefabInstance:
       propertyPath: m_text
       value: "The off-board battery charger, when plugged into the off-board battery
         charger port and a standard electrical outlet, charges the scooter\u2019s
-        batteries.\r Hold the button until charging is at 96%.\n\n\r\nThe LED lights
-        on the charger indicate different charger conditions at various times. Refer
-        to the charger owner\u2019s manual enclosed with the charger for a complete
-        explanation of these indicators.\r\n\r\nYour scooter is equipped with two
-        sealed, maintenance free, 12 AH batteries. Fully charge the batteries prior
-        to using your scooter for the first time. Keeping the batteries almost fully
-        charged will keep your scooter running smoothly.\r\n"
+        batteries.\r <b>Hold the button until charging is at 96%.</b>\n\r\nThe LED
+        lights on the charger indicate different charger conditions at various times.
+        Refer to the charger owner\u2019s manual enclosed with the charger for a
+        complete explanation of these indicators.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 1723796180092417807, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
@@ -2447,14 +2444,12 @@ PrefabInstance:
     - target: {fileID: 1373233550392014131, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
       propertyPath: m_text
-      value: "\r\r\n1. Place new batteries into the scooter and secure the battery
-        straps.\r\n2. Attach the red battery cable to the positive (+) battery terminal.\r\n3.
-        Attach the black battery cable to the negative (-) battery terminal.\r\n4.
+      value: "\r1. Place new batteries into the scooter and secure the battery straps.\r\nB.
+        Attach the red battery cable to the positive (+) battery terminal.\r\n3.
+        Attach the black battery cable to the negative (-) battery terminal.\r\nD.
         Reposition the terminal boots over the battery terminals.\r\n5. Reconnect
         the battery cable connectors until the locking tab engages, indicated by
-        a \u201Cclick.\u201D\r\n6. Place the rear shroud back onto the scooter frame.\r\n7.
-        Reinstall the upper seat post and secure it with the ball detent pin.\r\n8.
-        Reinstall the seat.\r\n9. Reinstall and tighten the securement knob."
+        a \u201Cclick.\u201D\r\nE. Place the rear shroud back onto the scooter frame.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 1723796180092417807, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
@@ -2776,13 +2771,12 @@ PrefabInstance:
     - target: {fileID: 1373233550392014131, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
       propertyPath: m_text
-      value: "\r\r\r\r\r\nThe seat can be repositioned to different heights. See
-        figure 10.(slider Value: 0-100, 20%)\r\n1. Remove the key from the key switch.\r\n2.
-        Make sure the manual freewheel lever is in the drive\r\nposition.\r\n3. Loosen
+      value: "\r\r\r\r\rThe seat can be repositioned to different heights. \n1. Make
+        sure the manual freewheel lever is in the drive\r\nposition.\r\n3. Loosen
         the securement knob on the seat post.\r\n4. Remove the ball detent pin from
-        the seat post.\r\n5. Raise or lower the seat to the desired height. Set the
-        vertical slider to 20%(20cm).\r\n6. Hold the seat in position, insert the
-        ball detent pin and tighten the securement knob.\r\n"
+        the seat post.\r\n5. Raise or lower the seat to the <b>desired height of
+        20%(20cm).\r</b>\n6. Hold the seat in position, insert the ball detent pin
+        and tighten the securement knob.\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1723796180092417807, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
@@ -2945,8 +2939,8 @@ PrefabInstance:
       value: "\r\r\rRemove the key from the key switch before adjusting the tiller
         or the seat. Never attempt to adjust the tiller or the seat while the scooter
         is in motion. Your scooter is equipped with an adjustable pivoting tiller.\r\n1.
-        Loosen the tiller adjustment knob. See figure 9. \r\n2. Adjust the tiller
-        to a comfortable position.\r\n3. Tighten the tiller adjustment knob."
+        Loosen the tiller adjustment knob. \n2. Adjust the tiller to a comfortable
+        position.\r\n3. Tighten the tiller adjustment knob."
       objectReference: {fileID: 0}
     - target: {fileID: 1723796180092417807, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
@@ -3604,16 +3598,9 @@ PrefabInstance:
         to indicate the approximate strength of your batteries.
 
 
-
         From right
         to left, green indicates fully charged batteries, yellow a draining charge
-        and red indicates that an immediate recharge is necessary.  To ensure the
-        highest accuracy, the battery condition meter should be checked while operating
-        your scooter at full speed on a dry, level surface.
-
-
-
-        To check the
+        and red indicates that an immediate recharge is necessary.  To check the
         battery strength during charging, you must first unplug the charger power
         lead and turn on your scooter.
 
@@ -3780,9 +3767,9 @@ PrefabInstance:
       value: "\rWhenever you need or want to push your scooter for short distances,
         you can put it in freewheel mode.\r\n1. Push down on the manual freewheel
         lever to disable the drive system and the brake system. You will now be able
-        to push your scooter. Select button 1.\n2 Pull up on the manual freewheel
+        to push your scooter. <b>Select button 1.</b>\n2 Pull up on the manual freewheel
         lever to reengage the drive and the brake systems; this takes your scooter
-        out of freewheel mode. Select button 2.\n\n\n\n\n\r\n"
+        out of freewheel mode. <b> Select button 2.</b>\n\n\n\n\n\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1723796180092417807, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
@@ -4096,43 +4083,12 @@ PrefabInstance:
     - target: {fileID: 1373233550392014131, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
       propertyPath: m_text
-      value: '
-
-        1. Remove the key from the key switch.
-
-        2. Make sure
-        the manual freewheel lever is in the drive position.
-
-        3. Remove the
-        securement knob from the seat post, fold
-
-        down the seatback, then
-        lift the seat straight up and off of
-
-        the scooter.
-
-        4. Remove
-        the ball detent pin from the seat post, then remove the upper seat post.
-
-        5.
-        Gently lift up and remove the rear shroud.
-
-        6. Disconnect the red
-        (+) positive and black (-) negative
-
-        battery cables by pressing the
-        locking tab on each cable
-
-        connector and pulling them apart. See
-        figure 8.
-
-        7. Disconnect the battery cables from the battery terminals
-        by sliding back each terminal boot and removing the nut from the bolt.
-
-        8.
-        Unfasten the battery strap from each battery and remove the batteries.
-
-'
+      value: "1. Remove the key from the key switch.\n2. Make sure the manual freewheel
+        lever is in the drive position.\n3. Disconnect the red and black battery
+        cables by pressing the locking tab on each cable connector and pulling them
+        apart. \n5. Disconnect the battery cables from the battery terminals by sliding
+        back each terminal boot and removing the nut from the bolt.\n6. Unfasten
+        the battery strap from each battery and remove the batteries.\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1723796180092417807, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
@@ -4294,10 +4250,15 @@ PrefabInstance:
       propertyPath: m_text
       value: 'If the key is moved to the "off" position while your scooter is in
         motion, the electronic brakes will engage and your scooter''s ejector seat
-        will be activated! To reset the Ejector Seat return the Ejector Slider to
-        0.
+        will be activated! To reset the Ejector Seat return the <b>Ejector Slider
+        to 0.</b>
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1373233550392014131, guid: c4921c91789933742baf56ecaaaeda73,
+        type: 3}
+      propertyPath: m_fontStyle
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1723796180092417807, guid: c4921c91789933742baf56ecaaaeda73,
         type: 3}
@@ -4449,8 +4410,8 @@ PrefabInstance:
       propertyPath: m_text
       value: "\r\r\r\rThe seat rotation lever will secure the seat into several positions.
         \r\n1. Disengage the seat rotation lever to unlock the seat. \n2. Rotate
-        the seat to the desired position. The typical position is 45 degrees.\r\n3.
-        Release the lever to secure the seat into place.\r\n"
+        the seat to the desired position. The typical position is <b>45 degrees.\r
+        </b>\n3. Release the lever to secure the seat into place.\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1373233550392014131, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
@@ -4932,8 +4893,7 @@ PrefabInstance:
       value: "\rThis dial allows you to preselect and limit your scooter\u2019s top
         speed.\r\n- The image of the tortoise represents the slowest speed setting.\r\n-
         The image of the hare represents the fastest speed setting.\r\n\r\nIf the
-        speed adjustment image is stuck, set the Speed Dial Toggle to Reset in the
-        dropdown. \n\n\r\n"
+        speed adjustment image is stuck, set the <b>Speed Slider to 0.1. </b>\n\n\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1723796180092417807, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
