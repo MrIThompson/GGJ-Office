@@ -5224,8 +5224,9 @@ PrefabInstance:
     - target: {fileID: 1373233550392014131, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
       propertyPath: m_text
-      value: "\r\rThe anti-tip wheels are bolted to the frame of the scooter and
-        are an integral and important safety feature of your scooter.\r\n"
+      value: "\rThe anti-tip wheels are bolted to the frame of the scooter and are
+        an integral and important safety feature of your scooter. To unlock the wheels
+        set <b> slider to 0.1.</b>"
       objectReference: {fileID: 0}
     - target: {fileID: 1723796180092417807, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
