@@ -50,7 +50,8 @@ public class GameController : MonoBehaviour
                 if (v.targetValue != -1)
                 {
 
-                    if (v.targetValue - v.currentValue < winTollerance)
+
+                    if (Mathf.Abs(v.targetValue - v.currentValue) < winTollerance)
                     {
                         //Success
                         this.CompleteCall();
