@@ -1966,10 +1966,8 @@ PrefabInstance:
       propertyPath: m_text
       value: "The off-board battery charger, when plugged into the off-board battery
         charger port and a standard electrical outlet, charges the scooter\u2019s
-        batteries.\r <b>Hold the button until charging is at 96%.</b>\n\r\nThe LED
-        lights on the charger indicate different charger conditions at various times.
-        Refer to the charger owner\u2019s manual enclosed with the charger for a
-        complete explanation of these indicators.\r"
+        batteries.\r <b>Hold the button until charging is at 96%.</b> The LED lights
+        on the charger indicate different charger conditions at various times."
       objectReference: {fileID: 0}
     - target: {fileID: 1723796180092417807, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
@@ -2447,9 +2445,8 @@ PrefabInstance:
       value: "\r1. Place new batteries into the scooter and secure the battery straps.\r\nB.
         Attach the red battery cable to the positive (+) battery terminal.\r\n3.
         Attach the black battery cable to the negative (-) battery terminal.\r\nD.
-        Reposition the terminal boots over the battery terminals.\r\n5. Reconnect
-        the battery cable connectors until the locking tab engages, indicated by
-        a \u201Cclick.\u201D\r\nE. Place the rear shroud back onto the scooter frame.\r"
+        Reposition the terminal boots over the battery terminals.\r\n4. Place the
+        rear shroud back onto the scooter frame.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 1723796180092417807, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
@@ -2771,12 +2768,10 @@ PrefabInstance:
     - target: {fileID: 1373233550392014131, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
       propertyPath: m_text
-      value: "\r\r\r\r\rThe seat can be repositioned to different heights. \n1. Make
-        sure the manual freewheel lever is in the drive\r\nposition.\r\n3. Loosen
-        the securement knob on the seat post.\r\n4. Remove the ball detent pin from
-        the seat post.\r\n5. Raise or lower the seat to the <b>desired height of
-        20%(20cm).\r</b>\n6. Hold the seat in position, insert the ball detent pin
-        and tighten the securement knob.\r\n"
+      value: "\r\r\r\r\rThe seat can be repositioned to different heights. \n1. Loosen
+        the securement knob on the seat post.\r\n-. Remove the ball detent pin from
+        the seat post.\r\n3. Raise or lower the seat to the <b>desired height of
+        20%(20cm).\r</b>\n\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1723796180092417807, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
@@ -2936,8 +2931,7 @@ PrefabInstance:
     - target: {fileID: 1373233550392014131, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
       propertyPath: m_text
-      value: "\r\r\rRemove the key from the key switch before adjusting the tiller
-        or the seat. Never attempt to adjust the tiller or the seat while the scooter
+      value: "\r\r\rNever attempt to adjust the tiller or the seat while the scooter
         is in motion. Your scooter is equipped with an adjustable pivoting tiller.\r\n1.
         Loosen the tiller adjustment knob. \n2. Adjust the tiller to a comfortable
         position.\r\n3. Tighten the tiller adjustment knob."
@@ -3104,7 +3098,6 @@ PrefabInstance:
         on your scooter.
 
         - Turn the key anticlockwise to turn off your scooter.
-
 
         Although
         the key can be left in the key switch when the scooter is powered down, we
@@ -3594,17 +3587,10 @@ PrefabInstance:
     - target: {fileID: 1373233550392014131, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
       propertyPath: m_text
-      value: 'The battery condition meter on the tiller console uses a colour code
-        to indicate the approximate strength of your batteries.
-
-
-        From right
-        to left, green indicates fully charged batteries, yellow a draining charge
-        and red indicates that an immediate recharge is necessary.  To check the
-        battery strength during charging, you must first unplug the charger power
-        lead and turn on your scooter.
-
-'
+      value: The battery condition meter on the tiller console uses a colour code
+        to indicate the approximate strength of your batteries. From right to left,
+        green indicates fully charged batteries, yellow a draining charge and red
+        indicates that an immediate recharge is necessary.
       objectReference: {fileID: 0}
     - target: {fileID: 1723796180092417807, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
@@ -3766,10 +3752,9 @@ PrefabInstance:
       propertyPath: m_text
       value: "\rWhenever you need or want to push your scooter for short distances,
         you can put it in freewheel mode.\r\n1. Push down on the manual freewheel
-        lever to disable the drive system and the brake system. You will now be able
-        to push your scooter. <b>Select button 1.</b>\n2 Pull up on the manual freewheel
-        lever to reengage the drive and the brake systems; this takes your scooter
-        out of freewheel mode. <b> Select button 2.</b>\n\n\n\n\n\r\n"
+        lever, <b>Select button 1.</b> You will now be able to push your scooter.
+        \n2 Pull up on the manual freewheel lever <b> Select button 2.</b>; this
+        takes your scooter out of freewheel mode.\n\n\n\n\n\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1723796180092417807, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
@@ -4083,12 +4068,12 @@ PrefabInstance:
     - target: {fileID: 1373233550392014131, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
       propertyPath: m_text
-      value: "1. Remove the key from the key switch.\n2. Make sure the manual freewheel
-        lever is in the drive position.\n3. Disconnect the red and black battery
-        cables by pressing the locking tab on each cable connector and pulling them
-        apart. \n5. Disconnect the battery cables from the battery terminals by sliding
-        back each terminal boot and removing the nut from the bolt.\n6. Unfasten
-        the battery strap from each battery and remove the batteries.\n"
+      value: "1. Make sure the manual freewheel lever is in the drive position.\n3.
+        Disconnect the red and black battery cables by pressing the locking tab on
+        each cable connector and pulling them apart. \n2. Disconnect the battery
+        cables from the battery terminals by sliding back each terminal boot and
+        removing the nut from the bolt.\n4. Unfasten the battery strap from each
+        battery and remove the batteries.\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1723796180092417807, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
@@ -5054,12 +5039,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: "When your scooter is in freewheel mode, the braking system is disengaged.\r\n!
-        Disengage the drive motors only on a level surface.\r\n! Ensure the key is
-        removed from the key switch.\r\n! Stand beside the scooter to engage or disengage
-        freewheel mode. Never sit on a\r scooter to do this.\r\n! After you have
-        finished pushing your scooter, always return it to the drive mode to lock\r
-        the brakes.\r\n\r\nFailure to heed the above could result in death or, more
-        importantly, damage to your scooter.\n"
+        Disengage the drive motors only on a level surface.\r\n! After you have finished
+        pushing your scooter, always return it to the drive mode to lock\r the brakes.\r\r\nFailure
+        to heed the above could result in death or, more importantly, damage to your
+        scooter.\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1723796180092417807, guid: c4921c91789933742baf56ecaaaeda73,
         type: 3}
