@@ -20,7 +20,7 @@ public class ControlElement : MonoBehaviour
 
     public virtual void InitChild()
     {
-        Debug.Log("Control surface init");
+        
     }
     
     public virtual void SubmitFloat(float i)

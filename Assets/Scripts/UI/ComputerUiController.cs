@@ -75,7 +75,7 @@ public class ComputerUiController : MonoBehaviour
         _customerNameText.SetText(ticket.characterName);
         ControlGroupController controller = _controllers[Random.Range(0, _controllers.Length)];
         List<GameObject> objs = new List<GameObject>();
-        int r = Random.Range(3, 8);
+        int r = Random.Range(3, 5);
         for (int i = 0; i < r; i++)
         {
             var obj = Instantiate(_elements[Random.Range(0, _elements.Length)], controller.transform);
@@ -96,6 +96,11 @@ public class ComputerUiController : MonoBehaviour
         _controllers[0].ClearObjects();
         _controllers[1].ClearObjects();
         _controllers[2].ClearObjects();
+    }
+
+    public void SubmitVirtualParams()
+    {
+        //DEMU!!!
     }
 
     private void Update()
