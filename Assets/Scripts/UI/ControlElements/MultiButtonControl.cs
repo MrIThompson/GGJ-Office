@@ -10,10 +10,10 @@ public class MultiButtonControl : ControlElement
    {
       foreach (TMP_Text txt in _buttonText)
       {
-         txt.SetText(Random.Range(0f,1f).ToString());
+         txt.SetText(Random.Range(0f,1f).ToString("0.00"));
       }
       r = Random.Range(0, _buttonText.Length);
-      _buttonText[r].SetText(Target.ToString());
+      _buttonText[r].SetText(Target.ToString("0.00"));
       base.InitChild();
    }
 

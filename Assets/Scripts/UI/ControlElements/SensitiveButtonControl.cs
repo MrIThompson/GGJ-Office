@@ -10,7 +10,7 @@ public class SensitiveButtonControl : ControlElement
     public override void InitChild()
     {
         CurrentAmount = 0;
-        _amount.SetText("000");
+        _amount.SetText("0.00");
         base.InitChild();
     }
 
@@ -24,13 +24,13 @@ public class SensitiveButtonControl : ControlElement
         _held = false;
         SubmitFloat(CurrentAmount);
         if(Math.Abs(CurrentAmount - Target) > 0.01f) CurrentAmount = 0;
-        _amount.SetText(CurrentAmount.ToString());
+        _amount.SetText(CurrentAmount.ToString("0.00"));
     }
 
     private void Update()
     {
         if (!_held) return; 
         CurrentAmount += 0.01f;
-        _amount.SetText(CurrentAmount.ToString());
+        _amount.SetText(CurrentAmount.ToString("0.00"));
     }
 }
