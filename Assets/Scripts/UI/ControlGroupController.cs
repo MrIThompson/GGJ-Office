@@ -22,6 +22,12 @@ public class ControlGroupController : MonoBehaviour
       {
          _objects[i].transform.SetParent(_spawnGroups[r]);
       }
+
+      foreach (var obj in _objects)
+      {
+         obj.transform.localScale = Vector3.one;
+      }
+      gameObject.SetActive(true);
    }
    
    public void ClearObjects()
@@ -31,5 +37,6 @@ public class ControlGroupController : MonoBehaviour
          Destroy(obj);
       }
       _objects = new List<GameObject>();
+      gameObject.SetActive(false);
    }
 }

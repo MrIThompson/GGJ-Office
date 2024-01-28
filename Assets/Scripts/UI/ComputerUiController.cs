@@ -20,7 +20,10 @@ public class ComputerUiController : MonoBehaviour
     [SerializeField] private GameObject _remoteParent;
     [SerializeField] private TMP_Text _customerNameText;
     [SerializeField] private ControlGroupController[] _controllers;
-
+    [SerializeField] private ControlElement[] _elements;
+    [SerializeField] private string[] _problems;
+    
+    
     [Header("Notifications")]
     [SerializeField] private RectTransform _notifParent;
     [SerializeField] private NotifElement _notifPrefab;
@@ -67,6 +70,34 @@ public class ComputerUiController : MonoBehaviour
         _manualParent.SetActive(false);
     }
 
+    public void SetRemote(Ticket ticket)
+    {
+        _customerNameText.SetText(ticket.characterName);
+        ControlGroupController controller = _controllers[Random.Range(0, _controllers.Length)];
+        List<GameObject> objs = new List<GameObject>();
+        int r = Random.Range(3, 8);
+        for (int i = 0; i < r; i++)
+        {
+            var obj = Instantiate(_elements[Random.Range(0, _elements.Length)], controller.transform);
+            obj.Init(_problems[Random.Range(0,_problems.Length)], Random.Range(0f,1f));
+            objs.Add(obj.gameObject);
+        }
+        controller.Init(objs);
+    }
+
+    public void CompleteCall()
+    {
+        ClearRemote();
+        _remoteParent.SetActive(false);
+    }
+    
+    private void ClearRemote()
+    {
+        _controllers[0].ClearObjects();
+        _controllers[1].ClearObjects();
+        _controllers[2].ClearObjects();
+    }
+
     private void Update()
     {
         Cursor.visible = !IsPointerOverUIElement();
@@ -80,15 +111,12 @@ public class ComputerUiController : MonoBehaviour
         Vector3 mousePos = _parentCanvas.transform.TransformPoint(movePos);
         _cursorRect.transform.position = mousePos;
     }
-
-    //Returns 'true' if we touched or hovering on Unity UI element.
+    
     public bool IsPointerOverUIElement()
     {
         return IsPointerOverUIElement(GetEventSystemRaycastResults());
     }
-
-
-    //Returns 'true' if we touched or hovering on Unity UI element.
+    
     private bool IsPointerOverUIElement(List<RaycastResult> eventSystemRaysastResults)
     {
         for (int index = 0; index < eventSystemRaysastResults.Count; index++)
@@ -99,9 +127,7 @@ public class ComputerUiController : MonoBehaviour
         }
         return false;
     }
-
-
-    //Gets all event system raycast results of current mouse or touch position.
+    
     static List<RaycastResult> GetEventSystemRaycastResults()
     {
         PointerEventData eventData = new PointerEventData(EventSystem.current);

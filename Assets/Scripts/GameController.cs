@@ -42,6 +42,15 @@ public class GameController : MonoBehaviour
     {
         scooter = GetComponent<Scooter>();
         scooter.Begin();
+        ComputerController.SetRemote(GetTicket());
+        PhoneController.StartPhoneConvo(GetTicket());
+    }
+
+    public void CompleteCall()
+    {
+        ComputerController.CompleteCall();
+        PhoneController.CompleteCall();
+        Invoke(nameof(updateTicket), 5);
     }
 
 

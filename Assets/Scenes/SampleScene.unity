@@ -2311,6 +2311,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 252177524}
   m_PrefabAsset: {fileID: 0}
+--- !u!224 &740308368 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5447767194989470026, guid: 91351ac7e2050704990ff6fef7633921,
+    type: 3}
+  m_PrefabInstance: {fileID: 1673269691}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &756579547
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2729,6 +2735,19 @@ MonoBehaviour:
   _phoneTransform: {fileID: 887284093}
   _ringSfx: {fileID: 1256154650}
   _phoneRingObj: {fileID: 1116881066}
+  _msgParent: {fileID: 740308368}
+  _msg: {fileID: 2449340978538163278, guid: 6ce79214e74d0384cb32701bce3abd0d, type: 3}
+  _playerResponses:
+  - Yes
+  - Yeah
+  - Yup
+  - Yarp
+  - Yeah?
+  - Yes....
+  - ...Yes
+  - Yeee...?
+  - Yeah!?!
+  - YES!
 --- !u!4 &869332189 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3643333674795363868, guid: 067fb86e8e4f5744a82f28c508805f86,

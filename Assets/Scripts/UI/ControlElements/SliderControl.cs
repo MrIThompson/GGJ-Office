@@ -1,12 +1,14 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class SliderControl : ControlElement
 {
    [SerializeField] private TMP_Text _amountText;
    [SerializeField] private Slider _slider;
-
+   
    public override void InitChild()
    {
       CurrentAmount = Random.value;
