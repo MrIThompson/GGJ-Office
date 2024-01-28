@@ -32,6 +32,7 @@ public class ControlGroupController : MonoBehaviour
    
    public void ClearObjects()
    {
+      if(_objects.Count == 0) return;
       foreach (var obj in _objects)
       {
          Destroy(obj);

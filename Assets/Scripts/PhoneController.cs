@@ -47,11 +47,11 @@ public class PhoneController : MonoBehaviour
     {
         DisplayMsg(_currentTicket.problem[_problemIndex], false, MsgElement.colour.normal);
         _problemIndex++;
-        float r = Random.Range(0.5f, 2);
+        float r = Random.Range(1f, 5);
         Invoke(nameof(PlayerResponse), r);
         if (_problemIndex < _currentTicket.problem.Length)
         {
-            Invoke(nameof(DisplayProblem), r + 1f);
+            Invoke(nameof(DisplayProblem), r + 2f);
         }
         else
         {
@@ -136,6 +136,4 @@ public class PhoneController : MonoBehaviour
             }
         }
     }
-
-
 }
