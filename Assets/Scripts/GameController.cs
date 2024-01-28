@@ -54,7 +54,7 @@ public class GameController : MonoBehaviour
                     if (Mathf.Abs(v.targetValue - v.currentValue) < winTollerance)
                     {
                         //Success
-                        this.CompleteCall();
+                        this.CompleteCall(true);
                     }
                 }
             }
@@ -72,11 +72,10 @@ public class GameController : MonoBehaviour
         PhoneController.StartPhoneConvo(GetTicket());
     }
 
-    public void CompleteCall()
+    public void CompleteCall(bool win)
     {
-        print("Call Completed");
         ComputerController.CompleteCall();
-        PhoneController.CompleteCall();
+        PhoneController.CompleteCall(win);
         Invoke(nameof(updateTicket), 5);
     }
 
