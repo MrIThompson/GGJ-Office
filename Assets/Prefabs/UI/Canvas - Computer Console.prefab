@@ -204,9 +204,9 @@ RectTransform:
   - {fileID: 1074928831745692990}
   - {fileID: 4882879711638576619}
   - {fileID: 5406115695756547022}
-  - {fileID: 2733230368373620417}
   - {fileID: 200315199308962966}
   - {fileID: 3899680324363509991}
+  - {fileID: 2733230368373620417}
   - {fileID: 5041770304722070185}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2135,7 +2135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
