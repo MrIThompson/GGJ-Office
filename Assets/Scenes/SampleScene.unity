@@ -2992,7 +2992,7 @@ MonoBehaviour:
   _phoneRingObj: {fileID: 1116881066}
   _msgParent: {fileID: 740308368}
   _msg: {fileID: 2449340978538163278, guid: 6ce79214e74d0384cb32701bce3abd0d, type: 3}
-  TimeOut: 0
+  TimeOut: 5
   _playerResponses:
   - Yes
   - Yeah
@@ -5174,7 +5174,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: dd38b0ed109c9a547a0852f9cd4415d1, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0

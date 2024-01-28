@@ -38,6 +38,8 @@ public class PhoneController : MonoBehaviour
 
     public void StartPhoneConvo(Ticket ticket)
     {
+        _animationSeq.Kill();
+        audioController.StopAudio(Sfx.ring);
         _currentTicket = ticket;
         DisplayProblem();
     }
@@ -58,14 +60,13 @@ public class PhoneController : MonoBehaviour
         }
 
         audioController.PlayAudio(Random.value < 0.5f ? Sfx.voice1 : Sfx.voice2);
-
-
     }
 
     private void StartIrritationCountdown()
     {
         DisplayMsg(_currentTicket.cannedResponses[Random.Range(0, _currentTicket.cannedResponses.Length)], false, MsgElement.colour.normal);
         _timeOutCounter++;
+        audioController.PlayAudio(Random.value < 0.5f ? Sfx.voice1 : Sfx.voice2);
         if (_timeOutCounter < TimeOut)
         {
             Invoke(nameof(StartIrritationCountdown), Random.Range(5, 10));
@@ -79,6 +80,7 @@ public class PhoneController : MonoBehaviour
     public void SuccessText()
     {
         DisplayMsg(_currentTicket.successText[Random.Range(0, _currentTicket.successText.Length)], false, MsgElement.colour.good);
+        audioController.PlayAudio(Random.value < 0.5f ? Sfx.voice1 : Sfx.voice2);
     }
 
     public void FailText()
