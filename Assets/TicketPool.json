@@ -23,7 +23,7 @@
         {
             "id": "#2",
             "characterName": "Dennis",
-            "problem": ["Help, my chair seat is bouncing!", "It nearly tipped me right out of the seat!"],
+            "problem": ["Help, my chair seat is bouncing!", "It nearly tipped me right out of the seat!", "Its trying to eject me, theres a warning error flashing", "I'm holding tight but the seat is trying to eject me!"],
             "cannedResponses": ["God my face!", "I can't reach the footwell." ],
             "successText": ["Oh thank you!", "Thank you so much!"], 
             "failureText": ["Not the ceiling, please no!"],
@@ -53,7 +53,7 @@
     {
       "id": "#5",
       "characterName": "Albert",
-      "problem": ["My scooter doesnt have any more juice, no go go.", "The dial thing on the display is at 0 and in the red?", "I just wanna go get some fish and chips, this is ridiculous."],
+      "problem": ["My scooter doesnt have any more juice, no go go.", "The dial thing on the display is at 0 and in the red?", "I just wanna go get some fish and chips, this is ridiculous.", "The battery dial reads 0?"],
       "cannedResponses": ["Can i get more charge in the battery, or is it off forever now?"],
       "successText": ["Thank you, bye!"], 
       "failureText": ["If you can't understand me you shouldn't be answering calls to people in my country."],
@@ -73,7 +73,7 @@
 {
   "id": "#7",
   "characterName": "Lucy",
-  "problem": ["My seat is too low, I can't reach the steering controls.", "I'm a tiny human, please help me.", "Do you think I should buy a booster seat just in case this happens again?"],
+  "problem": ["My seat is too low, I can't reach the steering controls.", "I'm a tiny human, please help me.", "Do you think I should buy a booster seat just in case this happens again?", "My seat is too low, please help!"],
   "cannedResponses": ["Hello?", "Please don't leave me, i need help."],
   "successText": ["Thank you so much, have a lovely day."], 
   "failureText": ["Thank you dear, you did your best."],
@@ -93,12 +93,12 @@
 {
   "id": "#9",
   "characterName": "Regina",
-  "problem": ["I've recently joined a scooter gang, and we like to freewhell down hills.","My brakes are stuck in the 'off' position. How do i fix that please?"],
+  "problem": ["I've recently joined a scooter gang, and we like to freewhell down hills.","My brakes are stuck in the 'off' position. How do i fix that please?", "Hello? My brakes are stuck?", "Ah, still no movement. The brakes are frozen"],
   "cannedResponses": ["Please help, my friends are all rolling downhill without me."],
   "successText": ["Cheers, thanks!"], 
   "failureText": ["My friends have left me. Well, back to crushing lonliness i guess. Thanks for nothing."],
   "problemArea": "brakes", 
-  "successValue": 0.1
+  "successValue": 1
 },
 {
   "id": "#10",

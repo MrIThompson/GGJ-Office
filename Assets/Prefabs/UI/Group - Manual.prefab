@@ -3763,8 +3763,8 @@ PrefabInstance:
       value: "\rWhenever you need or want to push your scooter for short distances,
         you can put it in freewheel mode.\r\n1. Push down on the manual freewheel
         lever, <b> Slider to 0.1.</b> You will now be able to push your scooter.
-        \n2 Pull up on the manual freewheel lever  <b> Slider to 0.1.</b> ; this
-        takes your scooter out of freewheel mode.\n\n\n\n\n\r\n"
+        \n2 Pull up on the manual freewheel lever to activate the breaks  <b> Slider
+        to 1.</b> ; this takes your scooter out of freewheel mode.\n\n\n\n\n\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1723796180092417807, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
