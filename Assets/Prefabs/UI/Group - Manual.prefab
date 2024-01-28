@@ -951,8 +951,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 43203c6b9a324ff4584973e688a824d8, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1966,8 +1966,18 @@ PrefabInstance:
       propertyPath: m_text
       value: "The off-board battery charger, when plugged into the off-board battery
         charger port and a standard electrical outlet, charges the scooter\u2019s
-        batteries.\r <b>Hold the button until charging is at 96%.</b> The LED lights
-        on the charger indicate different charger conditions at various times."
+        batteries.<b>Charge until the display reads 96%.</b> The LED lights on the
+        charger indicate different charger conditions at various times."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1373233550392014131, guid: 0a50ff263135d364eb60db98c2150209,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 1373233550392014131, guid: 0a50ff263135d364eb60db98c2150209,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 1723796180092417807, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
@@ -2771,7 +2781,7 @@ PrefabInstance:
       value: "\r\r\r\r\rThe seat can be repositioned to different heights. \n1. Loosen
         the securement knob on the seat post.\r\n-. Remove the ball detent pin from
         the seat post.\r\n3. Raise or lower the seat to the <b>desired height of
-        20%(20cm).\r</b>\n\n"
+        20%).\r</b>\n\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1723796180092417807, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
@@ -3752,8 +3762,8 @@ PrefabInstance:
       propertyPath: m_text
       value: "\rWhenever you need or want to push your scooter for short distances,
         you can put it in freewheel mode.\r\n1. Push down on the manual freewheel
-        lever, <b>Select button 1.</b> You will now be able to push your scooter.
-        \n2 Pull up on the manual freewheel lever <b> Select button 2.</b>; this
+        lever, <b> Slider to 0.1.</b> You will now be able to push your scooter.
+        \n2 Pull up on the manual freewheel lever  <b> Slider to 0.1.</b> ; this
         takes your scooter out of freewheel mode.\n\n\n\n\n\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1723796180092417807, guid: 0a50ff263135d364eb60db98c2150209,
@@ -4075,6 +4085,16 @@ PrefabInstance:
         removing the nut from the bolt.\n4. Unfasten the battery strap from each
         battery and remove the batteries.\n"
       objectReference: {fileID: 0}
+    - target: {fileID: 1373233550392014131, guid: 0a50ff263135d364eb60db98c2150209,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1373233550392014131, guid: 0a50ff263135d364eb60db98c2150209,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 1723796180092417807, guid: 0a50ff263135d364eb60db98c2150209,
         type: 3}
       propertyPath: m_Pivot.x
@@ -4236,7 +4256,7 @@ PrefabInstance:
       value: 'If the key is moved to the "off" position while your scooter is in
         motion, the electronic brakes will engage and your scooter''s ejector seat
         will be activated! To reset the Ejector Seat return the <b>Ejector Slider
-        to 0.</b>
+        to 0.2.</b>
 
 '
       objectReference: {fileID: 0}
@@ -5038,11 +5058,23 @@ PrefabInstance:
     - target: {fileID: 1373233550392014131, guid: c4921c91789933742baf56ecaaaeda73,
         type: 3}
       propertyPath: m_text
-      value: "When your scooter is in freewheel mode, the braking system is disengaged.\r\n!
-        Disengage the drive motors only on a level surface.\r\n! After you have finished
-        pushing your scooter, always return it to the drive mode to lock\r the brakes.\r\r\nFailure
+      value: 'When your scooter is in freewheel mode, the braking system is disengaged.
+
+        Failure
         to heed the above could result in death or, more importantly, damage to your
-        scooter.\n"
+        scooter.
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1373233550392014131, guid: c4921c91789933742baf56ecaaaeda73,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1373233550392014131, guid: c4921c91789933742baf56ecaaaeda73,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1723796180092417807, guid: c4921c91789933742baf56ecaaaeda73,
         type: 3}
