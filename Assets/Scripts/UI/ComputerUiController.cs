@@ -22,8 +22,8 @@ public class ComputerUiController : MonoBehaviour
     [SerializeField] private ControlGroupController[] _controllers;
     [SerializeField] private ControlElement[] _elements;
     [SerializeField] private string[] _problems;
-    
-    
+
+
     [Header("Notifications")]
     [SerializeField] private RectTransform _notifParent;
     [SerializeField] private NotifElement _notifPrefab;
@@ -79,7 +79,7 @@ public class ComputerUiController : MonoBehaviour
         for (int i = 0; i < r; i++)
         {
             var obj = Instantiate(_elements[Random.Range(0, _elements.Length)], controller.transform);
-            obj.Init(_problems[Random.Range(0,_problems.Length)], Random.Range(0f,1f));
+            obj.Init(_problems[Random.Range(0, _problems.Length)], Random.Range(0f, 1f));
             objs.Add(obj.gameObject);
         }
         controller.Init(objs);
@@ -90,17 +90,12 @@ public class ComputerUiController : MonoBehaviour
         ClearRemote();
         _remoteParent.SetActive(false);
     }
-    
+
     private void ClearRemote()
     {
         _controllers[0].ClearObjects();
         _controllers[1].ClearObjects();
         _controllers[2].ClearObjects();
-    }
-
-    public void SubmitVirtualParams()
-    {
-        //DEMU!!!
     }
 
     private void Update()
@@ -116,12 +111,12 @@ public class ComputerUiController : MonoBehaviour
         Vector3 mousePos = _parentCanvas.transform.TransformPoint(movePos);
         _cursorRect.transform.position = mousePos;
     }
-    
+
     public bool IsPointerOverUIElement()
     {
         return IsPointerOverUIElement(GetEventSystemRaycastResults());
     }
-    
+
     private bool IsPointerOverUIElement(List<RaycastResult> eventSystemRaysastResults)
     {
         for (int index = 0; index < eventSystemRaysastResults.Count; index++)
@@ -132,7 +127,7 @@ public class ComputerUiController : MonoBehaviour
         }
         return false;
     }
-    
+
     static List<RaycastResult> GetEventSystemRaycastResults()
     {
         PointerEventData eventData = new PointerEventData(EventSystem.current);

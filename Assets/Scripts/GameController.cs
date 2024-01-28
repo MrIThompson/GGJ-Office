@@ -12,6 +12,8 @@ public class GameController : MonoBehaviour
     public PhoneController PhoneController;
     public ComputerUiController ComputerController;
 
+    public float winTollerance = 0.15f;
+
     /*
      * Why am I documenting this?
      */
@@ -36,6 +38,29 @@ public class GameController : MonoBehaviour
     public Ticket GetTicket()
     {
         return currentTicket;
+    }
+
+    public void UpdateAffector(string affector, float value)
+    {
+        foreach (Affector v in scooter.affectors)
+        {
+            if (v.type == affector)
+            {
+                v.currentValue = value;
+                break;
+            }
+            if (v.targetValue != -1)
+            {
+
+                if (v.targetValue - v.currentValue < winTollerance)
+                {
+                    //Success
+                    this.CompleteCall();
+                }
+            }
+        }
+
+
     }
 
     public void BeginCall()
