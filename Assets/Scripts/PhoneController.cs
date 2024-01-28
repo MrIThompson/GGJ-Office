@@ -35,7 +35,7 @@ public class PhoneController : MonoBehaviour
 
    public void PlayerResponse()
    {
-      DisplayMsg(_playerResponses[Random.Range(0,_playerResponses.Length)], true);
+      DisplayMsg(_playerResponses[Random.Range(0,_playerResponses.Length)], true, MsgElement.colour.normal);
    }
 
    public void StartPhoneConvo(Ticket ticket)
@@ -46,7 +46,7 @@ public class PhoneController : MonoBehaviour
 
    private void DisplayProblem()
    {
-      DisplayMsg(_currentTicket.problem[_problemIndex], false);
+      DisplayMsg(_currentTicket.problem[_problemIndex], false, MsgElement.colour.normal);
       _problemIndex++;
       float r = Random.Range(0.5f, 2);
       Invoke(nameof(PlayerResponse), r);
@@ -62,7 +62,7 @@ public class PhoneController : MonoBehaviour
 
    private void StartIrritationCountdown()
    {
-      DisplayMsg(_currentTicket.cannedResponses[_cannedIndex], false);
+      DisplayMsg(_currentTicket.cannedResponses[_cannedIndex], false, MsgElement.colour.normal);
       _cannedIndex++;
       if (_cannedIndex < _currentTicket.cannedResponses.Length)
       {
@@ -73,21 +73,21 @@ public class PhoneController : MonoBehaviour
    public void SuccessText()
    {
       if (_rightIndex >= _currentTicket.successText.Length) return;
-      DisplayMsg(_currentTicket.successText[_rightIndex], false);
+      DisplayMsg(_currentTicket.successText[_rightIndex], false, MsgElement.colour.good);
       _rightIndex++;
    }
    
    public void FailText()
    {
       if (_wrongIndex >= _currentTicket.failureText.Length) return;
-      DisplayMsg(_currentTicket.failureText[_wrongIndex], false);
+      DisplayMsg(_currentTicket.failureText[_wrongIndex], false, MsgElement.colour.bad);
       _wrongIndex++;
    }
 
-   private void DisplayMsg(string msg, bool player)
+   private void DisplayMsg(string msg, bool player, MsgElement.colour colour)
    {
       var obj = Instantiate(_msg, _msgParent); 
-      obj.Init(msg, player);
+      obj.Init(msg, player, colour);
       _msgList.Add(obj);
    }
    

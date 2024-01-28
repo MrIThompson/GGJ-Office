@@ -76,10 +76,11 @@ public class ComputerUiController : MonoBehaviour
         ControlGroupController controller = _controllers[Random.Range(0, _controllers.Length)];
         List<GameObject> objs = new List<GameObject>();
         int r = Random.Range(3, 5);
+        int correctR = Random.Range(0, r);
         for (int i = 0; i < r; i++)
         {
             var obj = Instantiate(_elements[Random.Range(0, _elements.Length)], controller.transform);
-            obj.Init(_problems[Random.Range(0, _problems.Length)], Random.Range(0f, 1f));
+            obj.Init(i == correctR ? ticket.problemArea : _problems[Random.Range(0, _problems.Length)], i == correctR ? ticket.successValue : Random.Range(0f, 1f));
             objs.Add(obj.gameObject);
         }
         controller.Init(objs);
