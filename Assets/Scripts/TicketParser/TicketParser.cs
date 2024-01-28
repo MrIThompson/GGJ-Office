@@ -8,6 +8,7 @@ public class TicketParser : MonoBehaviour
 
     public TextAsset ticketJson;
     public Tickets parsedTickets;
+    private bool firstCall = true;
 
     public void parseTickets()
     {
@@ -19,6 +20,13 @@ public class TicketParser : MonoBehaviour
     */
     public Ticket getTicket()
     {
-        return parsedTickets.tickets[Random.Range(0, parsedTickets.tickets.Length)];
+        if (firstCall)
+        {
+            firstCall = false;
+            return parsedTickets.tickets[0];
+        }
+
+
+        return parsedTickets.tickets[Random.Range(1, parsedTickets.tickets.Length)];
     }
 }
