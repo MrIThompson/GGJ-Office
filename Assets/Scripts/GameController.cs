@@ -47,17 +47,17 @@ public class GameController : MonoBehaviour
             if (v.type == affector)
             {
                 v.currentValue = value;
-                break;
-            }
-            if (v.targetValue != -1)
-            {
-
-                if (v.targetValue - v.currentValue < winTollerance)
+                if (v.targetValue != -1)
                 {
-                    //Success
-                    this.CompleteCall();
+
+                    if (v.targetValue - v.currentValue < winTollerance)
+                    {
+                        //Success
+                        this.CompleteCall();
+                    }
                 }
             }
+
         }
 
 
@@ -73,6 +73,7 @@ public class GameController : MonoBehaviour
 
     public void CompleteCall()
     {
+        print("Call Completed");
         ComputerController.CompleteCall();
         PhoneController.CompleteCall();
         Invoke(nameof(updateTicket), 5);
