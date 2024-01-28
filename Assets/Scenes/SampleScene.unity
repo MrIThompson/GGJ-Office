@@ -6304,6 +6304,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5528343519554284545, guid: fdf7c5819a5ae8c4ba1ef456d1ecd997,
+        type: 3}
+      propertyPath: audioController
+      value: 
+      objectReference: {fileID: 1819851879}
     - target: {fileID: 5571591153694011924, guid: fdf7c5819a5ae8c4ba1ef456d1ecd997,
         type: 3}
       propertyPath: m_hasFontAssetChanged

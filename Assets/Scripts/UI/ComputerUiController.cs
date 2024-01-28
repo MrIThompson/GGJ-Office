@@ -5,6 +5,8 @@ using UnityEngine.EventSystems;
 
 public class ComputerUiController : MonoBehaviour
 {
+
+    public AudioController audioController;
     [SerializeField] private Canvas _parentCanvas;
     [SerializeField] private RectTransform _cursorRect;
 
@@ -55,7 +57,8 @@ public class ComputerUiController : MonoBehaviour
         string notifText = emailParser.getEmail();
         var obj = Instantiate(_notifPrefab, _notifParent);
         obj.Init(notifText, _notifExpireTime);
-        Invoke(nameof(CheckNotif), _notifSpawnTime);
+        audioController.PlayAudio(Sfx.message);
+        Invoke(nameof(CheckNotif), _notifSpawnTime + (Random.Range(-1f, 1f)));
     }
 
     public void OpenManual()
@@ -77,12 +80,14 @@ public class ComputerUiController : MonoBehaviour
         List<GameObject> objs = new List<GameObject>();
         int r = Random.Range(3, 5);
         int correctR = Random.Range(0, r);
+
         for (int i = 0; i < r; i++)
         {
             var obj = Instantiate(_elements[Random.Range(0, _elements.Length)], controller.transform);
             obj.Init(i == correctR ? ticket.problemArea : _problems[Random.Range(0, _problems.Length)], i == correctR ? ticket.successValue : Random.Range(0f, 1f));
             objs.Add(obj.gameObject);
         }
+
         controller.Init(objs);
     }
 
@@ -111,6 +116,11 @@ public class ComputerUiController : MonoBehaviour
 
         Vector3 mousePos = _parentCanvas.transform.TransformPoint(movePos);
         _cursorRect.transform.position = mousePos;
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            audioController.PlayAudio(Sfx.click);
+        }
     }
 
     public bool IsPointerOverUIElement()
