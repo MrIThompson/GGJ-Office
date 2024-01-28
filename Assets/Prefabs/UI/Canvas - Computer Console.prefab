@@ -406,8 +406,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 00:00
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ad55329d6b736d4f8cff6658528f37e, type: 2}
+  m_sharedMaterial: {fileID: 662779987906100070, guid: 3ad55329d6b736d4f8cff6658528f37e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -431,7 +432,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 71.35
+  m_fontSize: 66.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -540,8 +541,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ad55329d6b736d4f8cff6658528f37e, type: 2}
+  m_sharedMaterial: {fileID: 662779987906100070, guid: 3ad55329d6b736d4f8cff6658528f37e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -674,8 +676,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'NAME:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3ad55329d6b736d4f8cff6658528f37e, type: 2}
+  m_sharedMaterial: {fileID: 662779987906100070, guid: 3ad55329d6b736d4f8cff6658528f37e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2065,6 +2068,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4882879711638576619}
   - component: {fileID: 5528343519554284545}
+  - component: {fileID: 4819759636646940909}
   - component: {fileID: 8994306771712510785}
   - component: {fileID: 1484814664655766956}
   m_Layer: 5
@@ -2124,6 +2128,21 @@ MonoBehaviour:
     type: 3}
   _notifExpireTime: 8
   _notifSpawnTime: 4
+--- !u!114 &4819759636646940909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4173151128066761945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a162b75a9ecfa64d9f6950aaea7efce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emailJson: {fileID: 4900000, guid: 84b9079f0c4c0864584be4f1aafee702, type: 3}
+  parsedEmails:
+    emails: []
 --- !u!222 &8994306771712510785
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2477,7 +2496,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3899680324363509991
 RectTransform:
   m_ObjectHideFlags: 0

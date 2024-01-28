@@ -5751,11 +5751,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5895257265870282876, guid: fdf7c5819a5ae8c4ba1ef456d1ecd997,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6183151696581658827, guid: fdf7c5819a5ae8c4ba1ef456d1ecd997,
         type: 3}
       propertyPath: m_Camera
@@ -5769,11 +5764,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4173151128066761945, guid: fdf7c5819a5ae8c4ba1ef456d1ecd997,
-        type: 3}
-      insertIndex: 2
-      addedObject: {fileID: 2100287750}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdf7c5819a5ae8c4ba1ef456d1ecd997, type: 3}
 --- !u!1 &1535715274
 GameObject:
@@ -6163,11 +6154,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas - Phone Conversation
       objectReference: {fileID: 0}
-    - target: {fileID: 1177023356536264752, guid: 91351ac7e2050704990ff6fef7633921,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4908808493050820858, guid: 91351ac7e2050704990ff6fef7633921,
         type: 3}
       propertyPath: m_Camera
@@ -6217,21 +6203,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 183.8726
-      objectReference: {fileID: 0}
-    - target: {fileID: 7785096388210291030, guid: 91351ac7e2050704990ff6fef7633921,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.01875966
-      objectReference: {fileID: 0}
-    - target: {fileID: 7785096388210291030, guid: 91351ac7e2050704990ff6fef7633921,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.01875966
-      objectReference: {fileID: 0}
-    - target: {fileID: 7785096388210291030, guid: 91351ac7e2050704990ff6fef7633921,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.01875966
       objectReference: {fileID: 0}
     - target: {fileID: 7785096388210291030, guid: 91351ac7e2050704990ff6fef7633921,
         type: 3}
@@ -6304,7 +6275,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 1458909904}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2100287746}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0828dc92856beb4f839fac5cf615fc1, type: 3}
@@ -8187,26 +8158,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2003247906}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2100287746 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4173151128066761945, guid: fdf7c5819a5ae8c4ba1ef456d1ecd997,
-    type: 3}
-  m_PrefabInstance: {fileID: 1458909904}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2100287750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2100287746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a162b75a9ecfa64d9f6950aaea7efce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  emailJson: {fileID: 4900000, guid: 84b9079f0c4c0864584be4f1aafee702, type: 3}
-  parsedEmails: []
 --- !u!1001 &2118023505
 PrefabInstance:
   m_ObjectHideFlags: 0
