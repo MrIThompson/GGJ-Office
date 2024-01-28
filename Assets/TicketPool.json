@@ -13,7 +13,7 @@
       {
         "id": "#1",
         "characterName": "Edith",
-        "problem": [ "Hey there! I've got a little hiccup with my motorized wheelchair, can you help me out?", "So, my wheelchair has been making this weird noise. Like a dying cat and a squeaky door.", "Seriously? It can't be that hard to get a proper response. What's causing this weird noise, and how do I fix it?", "Are you even listening to me? This is the worst customer service experience ever! Give me something more than a ‘yes.’", "Unbelievable! Okay, last try. My wheelchair sounds like a dying cat. Any suggestions on what might be causing this?" ],
+        "problem": [ "Hey there! I've got a little hiccup with my motorized wheelchair, can you help me out?", "So, my wheels have been making this weird noise.", "Like a dying cat and a squeaky door.", "Seriously? It can't be that hard to get a proper response.", "What's causing this wheel problem, and how do I fix it?", "Are you even listening to me?", "This is the worst customer service experience ever!", "Unbelievable! Okay, last try.", "My wheelchair sounds like a dying cat. What might be causing this?" ],
         "cannedResponses": [ "Are you still there?", "Hello? Hello? This is ridiculous." ],
         "successText": [ "Phew!", "Thank you so much, i'll make sure to give you 5 stars!'" ],
         "failureText": [ "HELP! HELP! HELP! HELP! HE-", "I'm done here, I dont need forward momentum anyway!'" ],
