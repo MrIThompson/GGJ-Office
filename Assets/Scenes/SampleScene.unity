@@ -6659,6 +6659,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7032042069020584874, guid: fdf7c5819a5ae8c4ba1ef456d1ecd997,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -10.191071
+      objectReference: {fileID: 0}
     - target: {fileID: 7032859460090124118, guid: fdf7c5819a5ae8c4ba1ef456d1ecd997,
         type: 3}
       propertyPath: m_hasFontAssetChanged
@@ -6780,6 +6785,31 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8294512067789190047, guid: fdf7c5819a5ae8c4ba1ef456d1ecd997,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319137602377643748, guid: fdf7c5819a5ae8c4ba1ef456d1ecd997,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319137602377643748, guid: fdf7c5819a5ae8c4ba1ef456d1ecd997,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319137602377643748, guid: fdf7c5819a5ae8c4ba1ef456d1ecd997,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319137602377643748, guid: fdf7c5819a5ae8c4ba1ef456d1ecd997,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8319137602377643748, guid: fdf7c5819a5ae8c4ba1ef456d1ecd997,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
@@ -8159,7 +8189,7 @@ MonoBehaviour:
   scooter: {fileID: 0}
   PhoneController: {fileID: 867039044}
   ComputerController: {fileID: 1675028227}
-  winTollerance: 0.15
+  winTollerance: 0.05
 --- !u!114 &1879987356
 MonoBehaviour:
   m_ObjectHideFlags: 0

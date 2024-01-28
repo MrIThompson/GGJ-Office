@@ -15,8 +15,6 @@ public class ComputerUiController : MonoBehaviour
 
     [Header("Manual")]
     [SerializeField] private GameObject _manualParent;
-    [SerializeField] private ManualElement _manualElement;
-    [SerializeField] private ManualElement _manualWarningElement;
 
     [Header("Remote")]
     [SerializeField] private GameObject _remoteParent;
@@ -78,7 +76,7 @@ public class ComputerUiController : MonoBehaviour
         _customerNameText.SetText(ticket.characterName);
         ControlGroupController controller = _controllers[Random.Range(0, _controllers.Length)];
         List<GameObject> objs = new List<GameObject>();
-        int r = Random.Range(3, 5);
+        int r = 3;
         int correctR = Random.Range(0, r);
 
         for (int i = 0; i < r; i++)

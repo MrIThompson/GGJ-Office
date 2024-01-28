@@ -567,12 +567,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 53.35
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 150
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 4096
@@ -702,12 +702,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 53.35
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 150
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 4096
@@ -1480,10 +1480,6 @@ MonoBehaviour:
   _cursorRect: {fileID: 5041770304722070185}
   _timeText: {fileID: 6275272212066505535}
   _manualParent: {fileID: 2844496734666745167}
-  _manualElement: {fileID: 1274151607381696492, guid: 0a50ff263135d364eb60db98c2150209,
-    type: 3}
-  _manualWarningElement: {fileID: 1274151607381696492, guid: c4921c91789933742baf56ecaaaeda73,
-    type: 3}
   _remoteParent: {fileID: 5895257265870282876}
   _customerNameText: {fileID: 4334133018812831040}
   _controllers:
@@ -1870,7 +1866,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3899680324363509991
 RectTransform:
   m_ObjectHideFlags: 0
