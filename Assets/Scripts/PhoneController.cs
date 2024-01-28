@@ -17,10 +17,9 @@ public class PhoneController : MonoBehaviour
     private List<MsgElement> _msgList = new List<MsgElement>();
     private Ticket _currentTicket;
     private int _problemIndex;
-    private int _cannedIndex;
-    private int _wrongIndex;
-    private int _rightIndex;
-
+    private int _timeOutCounter;
+    public int TimeOut;
+    
     [SerializeField] private string[] _playerResponses;
 
     public void AnswerPhone()
@@ -47,7 +46,7 @@ public class PhoneController : MonoBehaviour
     {
         DisplayMsg(_currentTicket.problem[_problemIndex], false, MsgElement.colour.normal);
         _problemIndex++;
-        float r = Random.Range(1f, 5);
+        float r = Random.Range(3f, 6f);
         Invoke(nameof(PlayerResponse), r);
         if (_problemIndex < _currentTicket.problem.Length)
         {
@@ -61,26 +60,26 @@ public class PhoneController : MonoBehaviour
 
     private void StartIrritationCountdown()
     {
-        DisplayMsg(_currentTicket.cannedResponses[_cannedIndex], false, MsgElement.colour.normal);
-        _cannedIndex++;
-        if (_cannedIndex < _currentTicket.cannedResponses.Length)
+        DisplayMsg(_currentTicket.cannedResponses[Random.Range(0, _currentTicket.cannedResponses.Length)], false, MsgElement.colour.normal);
+        _timeOutCounter++;
+        if (_timeOutCounter < TimeOut)
         {
             Invoke(nameof(StartIrritationCountdown), Random.Range(5, 10));
+        }
+        else
+        {
+            GameController.CompleteCall(false);
         }
     }
 
     public void SuccessText()
     {
-        if (_rightIndex >= _currentTicket.successText.Length) return;
-        DisplayMsg(_currentTicket.successText[_rightIndex], false, MsgElement.colour.good);
-        _rightIndex++;
+        DisplayMsg(_currentTicket.successText[Random.Range(0,_currentTicket.successText.Length)], false, MsgElement.colour.good);
     }
 
     public void FailText()
     {
-        if (_wrongIndex >= _currentTicket.failureText.Length) return;
-        DisplayMsg(_currentTicket.failureText[_wrongIndex], false, MsgElement.colour.bad);
-        _wrongIndex++;
+        DisplayMsg(_currentTicket.failureText[Random.Range(0,_currentTicket.failureText.Length)], false, MsgElement.colour.bad);
     }
 
     private void DisplayMsg(string msg, bool player, MsgElement.colour colour)
@@ -90,10 +89,11 @@ public class PhoneController : MonoBehaviour
         _msgList.Add(obj);
     }
 
-    public void CompleteCall()
+    public void CompleteCall(bool win)
     {
         CancelInvoke();
-        SuccessText();
+        if(win) SuccessText();
+        else FailText();
         Invoke(nameof(EndCall), 3);
     }
 
@@ -102,9 +102,7 @@ public class PhoneController : MonoBehaviour
         _onPhone = false;
         _phoneRingObj.SetActive(false);
         _problemIndex = 0;
-        _cannedIndex = 0;
-        _wrongIndex = 0;
-        _rightIndex = 0;
+        _timeOutCounter = 0;
         foreach (var msg in _msgList)
         {
             msg.Clear();

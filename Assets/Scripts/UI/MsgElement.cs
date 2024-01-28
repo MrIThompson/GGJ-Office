@@ -45,7 +45,7 @@ public class MsgElement : MonoBehaviour
 
     public void Clear()
     {
-        _canvasGroup.DOFade(0, 0.5f);
-        Destroy(gameObject);
+        _canvasGroup.DOFade(0, 0.5f).OnComplete(() => Destroy(gameObject));
+        
     }
 }
