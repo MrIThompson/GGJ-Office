@@ -14,12 +14,92 @@
             "id": "#2",
             "characterName": "Dennis",
             "problem": ["Help, my chair seat is bouncing!", "It nearly tipped me right out of the seat!"],
-            "cannedResponses": ["God my face!" ],
+            "cannedResponses": ["God my face!", "I can't reach the footwell." ],
             "successText": ["Oh thank you!", "Thank you so much!"], 
-            "failureText": ["OUCH!"],
+            "failureText": ["Not the ceiling, please no!"],
             "problemArea": "eject", 
             "successValue": 0.7
-        }
+        },
+        {
+          "id": "#3",
+          "characterName": "Marge",
+          "problem": ["My scooter doesn't have brakes. I'm just freewheeling downhill, I can't stop, help!", "Are you there? Help me, theres a brick wall ahead.", "Hello? Hello!?", "I just pulled this lever, i dont understand why i can't break."],
+          "cannedResponses": ["Argh kerb, where did that come from."],
+          "successText": ["It was that simple... Thats awkward"], 
+          "failureText": ["I'm going to hit the wa-...."],
+          "problemArea": "brake", 
+          "successValue": 1
+      },
+      {
+        "id": "#4",
+        "characterName": "Wilfred",
+        "problem": ["I can't make my scooter move", "All i pressed was the freewheel lever, but now i can't get it back into drive?", "Thank you for not making me feel stupid, i appreciate you."],
+        "cannedResponses": ["Maybe if i push this button?"],
+        "successText": ["Amzing customer service, thank you so much"], 
+        "failureText": ["Well... thanks for your help... i guess."],
+        "problemArea": "brake", 
+        "successValue": 0.1
+    },
+    {
+      "id": "#5",
+      "characterName": "Albert",
+      "problem": ["My scooter doesnt have any more juice, no go go.", "The dial thing on the display is at 0 and in the red?", "I just wanna go get some fish and chips, this is ridiculous."],
+      "cannedResponses": ["Can i get more charge in the battery, or is it off forever now?"],
+      "successText": ["Thank you, bye!"], 
+      "failureText": ["If you can't understand me you shouldn't be answering calls to people in my country."],
+      "problemArea": "battery", 
+      "successValue": 0.96
+  },
+  {
+    "id": "#6",
+    "characterName": "George",
+    "problem": ["I need to charge my scooter, the battery display dial reads 0. How do i fix this?", "You'd think it'd be a simple one button thing?", "Time efficient company you work for, huh?"],
+    "cannedResponses": ["Hello? Are you there?"],
+    "successText": ["Cheers!"], 
+    "failureText": ["Thanks for your help, i guess i'll crawl everywhere instead."],
+    "problemArea": "battery", 
+    "successValue": 0.96
+},
+{
+  "id": "#7",
+  "characterName": "Lucy",
+  "problem": ["My seat is too low, I can't reach the steering controls.", "I'm a tiny human, please help me.", "Do you think I should buy a booster seat just in case this happens again?"],
+  "cannedResponses": ["Hello?", "Please don't leave me, i need help."],
+  "successText": ["Thank you so much, have a lovely day."], 
+  "failureText": ["Thank you dear, you did your best."],
+  "problemArea": "seat", 
+  "successValue": 0.2
+},
+{
+  "id": "#8",
+  "characterName": "Nicholas",
+  "problem": ["My seat is facing the wrong way. Should i be reversing everywhere?", "Oh... well, how do i fix that?", "Hello? Can you hear me?", "I'm glad you understand but could you explain how to fix it!?"],
+  "cannedResponses": ["Please help, i cant keep turning my head like an owl!"],
+  "successText": ["Ah, thank you, thats so much better."], 
+  "failureText": ["It's fine, my head can rotate 180 degrees anyway."],
+  "problemArea": "back", 
+  "successValue": 0.45
+},
+{
+  "id": "#9",
+  "characterName": "Regina",
+  "problem": ["I've recently joined a scooter gang, and we like to freewhell down hills. My freewheel lever is stuck in the 'off' position. How do i fix that please?"],
+  "cannedResponses": ["Please help, my friends are all rolling downhill without me."],
+  "successText": ["Cheers, thanks!"], 
+  "failureText": ["My friends have left me. Well, back to crushing lonliness i guess. Thanks for nothing."],
+  "problemArea": "brakes", 
+  "successValue": 0.1
+},
+{
+  "id": "#10",
+  "characterName": "Harrison",
+  "problem": ["This stupid scooter is stuck on 'hare' speed. I feel like a boy racer cutting up the streets. I need to put it back in 'tortoise' mode but the speed display is stuck.", "I'm too old to be on-road all the time.", "Maybe in my younger days, i'd be happy to weave in and out of traffic."],
+  "cannedResponses": ["I do not like the wind in my hair."],
+  "successText": ["It was that easy!? Well thanks!"], 
+  "failureText": ["Fine, i'll just race about forever. Thanks for nothing."],
+  "problemArea": "tiller", 
+  "successValue": 0.5
+}
     ]
 }
 
